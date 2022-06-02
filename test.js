@@ -1,12 +1,27 @@
-//slicing
-var str = "hello, world";
-var str2 = str.slice(2, 9);
+//long way
+var myArray = [];
 
-console.log(str2);
+myArray[0] = 25;
 
-//spliting
-var tags = "meat, ham, salami, pork, beef, chicken";
+myArray[1] = 35;
 
-var tagsArray = tags.split(",");
+myArray[2] = true;
 
-console.log(tagsArray)
+myArray[3] = "hello";
+
+console.log(myArray);
+
+myArray[2] = false;
+
+//short way
+var myArray2 = [10,20,"hi",false];
+
+//third way
+var myArray3 = new Array();
+
+var myArray4 = new Array(5);
+
+//array methods
+
+console.log(myArray2.length);
+console.log(myArray2.sort());
