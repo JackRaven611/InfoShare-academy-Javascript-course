@@ -1,27 +1,19 @@
-//long way
-var myArray = [];
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Shaun";
+myCar.drive = function(){console.log("now driving");};
 
-myArray[0] = 25;
+console.log(myCar.driver);
 
-myArray[1] = 35;
+myCar.drive();
 
-myArray[2] = true;
+var myCar2 = {
+    maxSpeed: 70,
+    driver: "Net Ninja",
+    drive: function(speed, time){
+        console.log(speed * time);
+    }
+};
 
-myArray[3] = "hello";
-
-console.log(myArray);
-
-myArray[2] = false;
-
-//short way
-var myArray2 = [10,20,"hi",false];
-
-//third way
-var myArray3 = new Array();
-
-var myArray4 = new Array(5);
-
-//array methods
-
-console.log(myArray2.length);
-console.log(myArray2.sort());
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
